@@ -20,7 +20,7 @@ defineSupportCode(({ Given, Then, When }) => {
   // LANDING PAGE TEST
   Given(/^I open app Home page$/, () => {
     return client
-      .url('http://localhost:80')
+      .url('http://46.101.86.166/')
       .waitForElementVisible('body', 1000)
   })
 
