@@ -1,0 +1,166 @@
+[
+  {
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Home Page",
+    "tags": [],
+    "uri": "/Users/luis/Developer/jenkins_projects/tests-project/features/home_page_exists.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Home page exists",
+        "tags": [],
+        "id": "home-page;home-page-exists",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I open app Home page",
+            "result": {
+              "status": "passed",
+              "duration": 1559
+            },
+            "line": 5,
+            "match": {
+              "location": "/Users/luis/Developer/jenkins_projects/tests-project/features/step_definitions/sample.js:21"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the title of the page is \"Staging Server\"",
+            "result": {
+              "status": "passed",
+              "duration": 8
+            },
+            "line": 6,
+            "match": {
+              "location": "/Users/luis/Developer/jenkins_projects/tests-project/features/step_definitions/sample.js:27"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the button save exists",
+            "result": {
+              "status": "passed",
+              "duration": 33
+            },
+            "line": 7,
+            "match": {
+              "location": "/Users/luis/Developer/jenkins_projects/tests-project/features/step_definitions/sample.js:31"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "home-page"
+  },
+  {
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Google Search",
+    "tags": [],
+    "uri": "/Users/luis/Developer/jenkins_projects/tests-project/features/sample.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Searching Google",
+        "tags": [],
+        "id": "google-search;searching-google",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I open Google`s search page",
+            "result": {
+              "status": "passed",
+              "duration": 1067
+            },
+            "line": 5,
+            "match": {
+              "location": "/Users/luis/Developer/jenkins_projects/tests-project/features/step_definitions/sample.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the title is \"Google\"",
+            "result": {
+              "status": "passed",
+              "duration": 7
+            },
+            "line": 6,
+            "match": {
+              "location": "/Users/luis/Developer/jenkins_projects/tests-project/features/step_definitions/sample.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the Google search form exists",
+            "result": {
+              "status": "passed",
+              "duration": 37
+            },
+            "line": 7,
+            "match": {
+              "location": "/Users/luis/Developer/jenkins_projects/tests-project/features/step_definitions/sample.js:16"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Searching Google again",
+        "tags": [],
+        "id": "google-search;searching-google-again",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I open Google`s search page",
+            "result": {
+              "status": "passed",
+              "duration": 551
+            },
+            "line": 11,
+            "match": {
+              "location": "/Users/luis/Developer/jenkins_projects/tests-project/features/step_definitions/sample.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the title is \"Google\"",
+            "result": {
+              "status": "passed",
+              "duration": 8
+            },
+            "line": 12,
+            "match": {
+              "location": "/Users/luis/Developer/jenkins_projects/tests-project/features/step_definitions/sample.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the Google search form exists",
+            "result": {
+              "status": "passed",
+              "duration": 28
+            },
+            "line": 13,
+            "match": {
+              "location": "/Users/luis/Developer/jenkins_projects/tests-project/features/step_definitions/sample.js:16"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "google-search"
+  }
+]
