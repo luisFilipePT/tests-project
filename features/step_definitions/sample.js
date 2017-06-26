@@ -35,7 +35,7 @@ defineSupportCode(({ Given, Then, When }) => {
   // USERS LIST TEST
   Given('I open Home', function () {
     return client
-      .url('http://localhost:3000')
+      .url('http://46.101.86.166/')
       .waitForElementVisible('body', 1100);
   });
 
