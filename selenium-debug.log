@@ -1,0 +1,70 @@
+12:50:33.316 INFO - Selenium build info: version: '3.4.0', revision: 'unknown'
+12:50:33.317 INFO - Launching a standalone Selenium Server
+2017-06-26 12:50:33.331:INFO::main: Logging initialized @215ms to org.seleniumhq.jetty9.util.log.StdErrLog
+12:50:33.374 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+ registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform MAC
+12:50:33.375 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+ registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform MAC
+12:50:33.375 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+12:50:33.375 INFO - Driver provider com.opera.core.systems.OperaDriver registration is skipped:
+Unable to create new instances on this machine.
+12:50:33.375 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+12:50:33.375 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+2017-06-26 12:50:33.411:INFO:osjs.Server:main: jetty-9.4.3.v20170317
+2017-06-26 12:50:33.440:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@3e6fa38a{/,null,AVAILABLE}
+2017-06-26 12:50:33.467:INFO:osjs.AbstractConnector:main: Started ServerConnector@42dafa95{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
+2017-06-26 12:50:33.468:INFO:osjs.Server:main: Started @351ms
+12:50:33.468 INFO - Selenium Server is up and running
+12:50:33.677 INFO - SessionCleaner initialized with insideBrowserTimeout 0 and clientGoneTimeout 1800000 polling every 180000
+12:50:33.699 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, phantomjs.binary.path=/Users/luis/Developer/jenkins_projects/tests-project/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs, browserName=phantomjs, javascriptEnabled=true, platform=ANY}]])
+12:50:33.713 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, phantomjs.binary.path=/Users/luis/Developer/jenkins_projects/tests-project/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs, browserName=phantomjs, javascriptEnabled=true, platform=ANY}]
+12:50:33.724 INFO - executable: /Users/luis/Developer/jenkins_projects/tests-project/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs
+12:50:33.724 INFO - port: 43406
+12:50:33.724 INFO - arguments: [--webdriver=43406, --webdriver-logfile=/Users/luis/Developer/jenkins_projects/tests-project/phantomjsdriver.log]
+12:50:33.724 INFO - environment: {}
+[INFO  - 2017-06-26T11:50:34.875Z] GhostDriver - Main - running on port 43406
+[INFO  - 2017-06-26T11:50:34.996Z] Session [aa16ff00-5a65-11e7-8fb2-1f946840d902] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-26T11:50:34.996Z] Session [aa16ff00-5a65-11e7-8fb2-1f946840d902] - page.customHeaders:  - {}
+[INFO  - 2017-06-26T11:50:34.996Z] Session [aa16ff00-5a65-11e7-8fb2-1f946840d902] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-06-26T11:50:34.996Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: aa16ff00-5a65-11e7-8fb2-1f946840d902
+12:50:35.010 INFO - Detected dialect: OSS
+12:50:35.022 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, phantomjs.binary.path=/Users/luis/Developer/jenkins_projects/tests-project/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs, browserName=phantomjs, javascriptEnabled=true, platform=ANY}]]
+12:50:35.034 INFO - Executing: [get: http://46.101.86.166/])
+12:50:36.271 INFO - Done: [get: http://46.101.86.166/]
+12:50:36.278 INFO - Executing: [find elements: By.cssSelector: body])
+12:50:36.303 INFO - Done: [find elements: By.cssSelector: body]
+12:50:36.307 INFO - Executing: [is displayed: 0 [[PhantomJSDriver: phantomjs on MAC (aa16ff00-5a65-11e7-8fb2-1f946840d902)] -> css selector: body]])
+12:50:36.321 INFO - Done: [is displayed: 0 [[PhantomJSDriver: phantomjs on MAC (aa16ff00-5a65-11e7-8fb2-1f946840d902)] -> css selector: body]]
+12:50:36.330 INFO - Executing: [get title])
+12:50:36.334 INFO - Done: [get title]
+12:50:36.341 INFO - Executing: [find element: By.cssSelector: button[name="save"]])
+12:50:36.353 INFO - Done: [find element: By.cssSelector: button[name="save"]]
+12:50:36.356 INFO - Executing: [is displayed: 1 [[PhantomJSDriver: phantomjs on MAC (aa16ff00-5a65-11e7-8fb2-1f946840d902)] -> css selector: button[name="save"]]])
+12:50:36.367 INFO - Done: [is displayed: 1 [[PhantomJSDriver: phantomjs on MAC (aa16ff00-5a65-11e7-8fb2-1f946840d902)] -> css selector: button[name="save"]]]
+12:50:36.375 INFO - Executing: [get: http://google.com])
+12:50:37.614 INFO - Done: [get: http://google.com]
+12:50:37.619 INFO - Executing: [find elements: By.cssSelector: body])
+12:50:37.628 INFO - Done: [find elements: By.cssSelector: body]
+12:50:37.631 INFO - Executing: [is displayed: 2 [[PhantomJSDriver: phantomjs on MAC (aa16ff00-5a65-11e7-8fb2-1f946840d902)] -> css selector: body]])
+12:50:37.643 INFO - Done: [is displayed: 2 [[PhantomJSDriver: phantomjs on MAC (aa16ff00-5a65-11e7-8fb2-1f946840d902)] -> css selector: body]]
+12:50:37.648 INFO - Executing: [get title])
+12:50:37.652 INFO - Done: [get title]
+12:50:37.658 INFO - Executing: [find element: By.cssSelector: input[name="q"]])
+12:50:37.669 INFO - Done: [find element: By.cssSelector: input[name="q"]]
+12:50:37.671 INFO - Executing: [is displayed: 3 [[PhantomJSDriver: phantomjs on MAC (aa16ff00-5a65-11e7-8fb2-1f946840d902)] -> css selector: input[name="q"]]])
+12:50:37.684 INFO - Done: [is displayed: 3 [[PhantomJSDriver: phantomjs on MAC (aa16ff00-5a65-11e7-8fb2-1f946840d902)] -> css selector: input[name="q"]]]
+12:50:37.689 INFO - Executing: [get: http://google.com])
+12:50:37.909 INFO - Done: [get: http://google.com]
+12:50:37.912 INFO - Executing: [find elements: By.cssSelector: body])
+12:50:37.920 INFO - Done: [find elements: By.cssSelector: body]
+12:50:37.922 INFO - Executing: [is displayed: 4 [[PhantomJSDriver: phantomjs on MAC (aa16ff00-5a65-11e7-8fb2-1f946840d902)] -> css selector: body]])
+12:50:37.935 INFO - Done: [is displayed: 4 [[PhantomJSDriver: phantomjs on MAC (aa16ff00-5a65-11e7-8fb2-1f946840d902)] -> css selector: body]]
+12:50:37.941 INFO - Executing: [get title])
+12:50:37.945 INFO - Done: [get title]
+12:50:37.949 INFO - Executing: [find element: By.cssSelector: input[name="q"]])
+12:50:37.957 INFO - Done: [find element: By.cssSelector: input[name="q"]]
+12:50:37.959 INFO - Executing: [is displayed: 5 [[PhantomJSDriver: phantomjs on MAC (aa16ff00-5a65-11e7-8fb2-1f946840d902)] -> css selector: input[name="q"]]])
+12:50:37.971 INFO - Done: [is displayed: 5 [[PhantomJSDriver: phantomjs on MAC (aa16ff00-5a65-11e7-8fb2-1f946840d902)] -> css selector: input[name="q"]]]
+12:50:37.995 INFO - Executing: [delete session: d2d1d430-8501-44b2-8e98-9c72d2f009b5])
+[INFO  - 2017-06-26T11:50:38.002Z] ShutdownReqHand - _handle - About to shutdown
+12:50:38.802 INFO - Done: [delete session: d2d1d430-8501-44b2-8e98-9c72d2f009b5]

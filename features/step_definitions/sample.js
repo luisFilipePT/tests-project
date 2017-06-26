@@ -31,4 +31,23 @@ defineSupportCode(({ Given, Then, When }) => {
   Then(/^the button save exists$/, () => {
     return client.assert.visible('button[name="save"]')
   })
+
+  // USERS LIST TEST
+  Given('I open Home', function () {
+    return client
+      .url('http://localhost:3000')
+      .waitForElementVisible('body', 1100);
+  });
+
+  Then(/^the title is like "(.*?)"$/, (text) => {
+    return client.assert.title(text);
+  })
+
+  Then('the Users Lists exists', function () {
+      return client.assert.visible('table[class="table"]');
+  });
+
+  Then('the User {user} exists', function (user) {
+    return client.expect.element('td').text.to.contain(user);
+  });
 })
