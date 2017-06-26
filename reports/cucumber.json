@@ -4,7 +4,7 @@
     "line": 1,
     "name": "Home Page",
     "tags": [],
-    "uri": "/Users/luis/Developer/jenkins_projects/tests-project/features/home_page_exists.feature",
+    "uri": "/testing-server/features/home_page_exists.feature",
     "elements": [
       {
         "keyword": "Scenario",
@@ -19,11 +19,11 @@
             "name": "I open app Home page",
             "result": {
               "status": "passed",
-              "duration": 2775
+              "duration": 3591
             },
             "line": 5,
             "match": {
-              "location": "/Users/luis/Developer/jenkins_projects/tests-project/features/step_definitions/sample.js:21"
+              "location": "/testing-server/features/step_definitions/sample.js:21"
             }
           },
           {
@@ -32,11 +32,11 @@
             "name": "the title of the page is \"Staging Server\"",
             "result": {
               "status": "passed",
-              "duration": 8
+              "duration": 29
             },
             "line": 6,
             "match": {
-              "location": "/Users/luis/Developer/jenkins_projects/tests-project/features/step_definitions/sample.js:27"
+              "location": "/testing-server/features/step_definitions/sample.js:27"
             }
           },
           {
@@ -45,11 +45,11 @@
             "name": "the button save exists",
             "result": {
               "status": "passed",
-              "duration": 32
+              "duration": 137
             },
             "line": 7,
             "match": {
-              "location": "/Users/luis/Developer/jenkins_projects/tests-project/features/step_definitions/sample.js:31"
+              "location": "/testing-server/features/step_definitions/sample.js:31"
             }
           }
         ]
@@ -62,7 +62,7 @@
     "line": 1,
     "name": "Google Search",
     "tags": [],
-    "uri": "/Users/luis/Developer/jenkins_projects/tests-project/features/sample.feature",
+    "uri": "/testing-server/features/sample.feature",
     "elements": [
       {
         "keyword": "Scenario",
@@ -77,11 +77,11 @@
             "name": "I open Google`s search page",
             "result": {
               "status": "passed",
-              "duration": 1271
+              "duration": 591
             },
             "line": 5,
             "match": {
-              "location": "/Users/luis/Developer/jenkins_projects/tests-project/features/step_definitions/sample.js:6"
+              "location": "/testing-server/features/step_definitions/sample.js:6"
             }
           },
           {
@@ -90,11 +90,11 @@
             "name": "the title is \"Google\"",
             "result": {
               "status": "passed",
-              "duration": 8
+              "duration": 43
             },
             "line": 6,
             "match": {
-              "location": "/Users/luis/Developer/jenkins_projects/tests-project/features/step_definitions/sample.js:12"
+              "location": "/testing-server/features/step_definitions/sample.js:12"
             }
           },
           {
@@ -103,11 +103,11 @@
             "name": "the Google search form exists",
             "result": {
               "status": "passed",
-              "duration": 31
+              "duration": 185
             },
             "line": 7,
             "match": {
-              "location": "/Users/luis/Developer/jenkins_projects/tests-project/features/step_definitions/sample.js:16"
+              "location": "/testing-server/features/step_definitions/sample.js:16"
             }
           }
         ]
@@ -125,11 +125,11 @@
             "name": "I open Google`s search page",
             "result": {
               "status": "passed",
-              "duration": 250
+              "duration": 418
             },
             "line": 11,
             "match": {
-              "location": "/Users/luis/Developer/jenkins_projects/tests-project/features/step_definitions/sample.js:6"
+              "location": "/testing-server/features/step_definitions/sample.js:6"
             }
           },
           {
@@ -138,11 +138,11 @@
             "name": "the title is \"Google\"",
             "result": {
               "status": "passed",
-              "duration": 7
+              "duration": 28
             },
             "line": 12,
             "match": {
-              "location": "/Users/luis/Developer/jenkins_projects/tests-project/features/step_definitions/sample.js:12"
+              "location": "/testing-server/features/step_definitions/sample.js:12"
             }
           },
           {
@@ -151,11 +151,11 @@
             "name": "the Google search form exists",
             "result": {
               "status": "passed",
-              "duration": 25
+              "duration": 153
             },
             "line": 13,
             "match": {
-              "location": "/Users/luis/Developer/jenkins_projects/tests-project/features/step_definitions/sample.js:16"
+              "location": "/testing-server/features/step_definitions/sample.js:16"
             }
           }
         ]
@@ -168,7 +168,7 @@
     "line": 1,
     "name": "User List (User exists)",
     "tags": [],
-    "uri": "/Users/luis/Developer/jenkins_projects/tests-project/features/user_exists.feature",
+    "uri": "/testing-server/features/user_exists.feature",
     "elements": [
       {
         "keyword": "Scenario",
@@ -182,36 +182,51 @@
             "keyword": "Given ",
             "name": "I open Home",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 216
             },
-            "line": 5
+            "line": 5,
+            "match": {
+              "location": "/testing-server/features/step_definitions/sample.js:36"
+            }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "name": "the title is like \"Staging Server\"",
             "result": {
-              "status": "undefined"
+              "status": "failed",
+              "duration": 36,
+              "error_message": "Testing if the page title equals \"Staging Server\". - Expected \"Staging Server\" but got: \"Google\"\n    at World.Then (/testing-server/features/step_definitions/sample.js:43:26)"
             },
-            "line": 6
+            "line": 6,
+            "match": {
+              "location": "/testing-server/features/step_definitions/sample.js:42"
+            }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "name": "the Users Lists exists",
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 7
+            "line": 7,
+            "match": {
+              "location": "/testing-server/features/step_definitions/sample.js:46"
+            }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "name": "the User Mark exists",
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 8
+            "line": 8,
+            "match": {
+              "location": "/testing-server/features/step_definitions/sample.js:50"
+            }
           }
         ]
       }
