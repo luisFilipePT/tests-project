@@ -21,7 +21,7 @@ defineSupportCode(({ Given, Then, When }) => {
   Given(/^I open app Home page$/, () => {
     return client
       .url('http://46.101.86.166/')
-      .waitForElementVisible('body', 1000)
+      .waitForElementVisible('body', 1100)
   })
 
   Then(/^the title of the page is "(.*?)"$/, (text) => {
