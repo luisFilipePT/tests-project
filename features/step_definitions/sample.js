@@ -11,7 +11,7 @@ defineSupportCode(({ Given, Then, When }) => {
   });
 
   Then('the title is {title}', (title) => {
-    return client.browser.waitForElementVisible('h1', 1000).assert.containsText('h1', title);
+    return client.browser.waitForElementVisible('#appTitle', 1500).assert.containsText('#appTitle', title);
   })
 
   Then('the Movies List exists', function () {
@@ -19,7 +19,7 @@ defineSupportCode(({ Given, Then, When }) => {
   });
 
   Then('the Movie {title} exists', function (title) {
-    return client.assert.containsText('table[class="table"]', title);
+    return client.assert.containsText('.table', title);
   });
 
   // AT LEAST EXISTS 2 MOVIES
