@@ -6,7 +6,7 @@ I want to see and use the movie list and details
 Scenario: Check if movie exists
 
   Given I open the movies list
-  Then the title is App
+  Then the title is My Movies App
   And the Movies List exists
   And the Movie The House exists
 
