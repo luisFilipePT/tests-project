@@ -11,7 +11,7 @@ defineSupportCode(({ Given, Then, When }) => {
   });
 
   Then('the title is {title}', (title) => {
-    return client.browser.waitForElementVisible('#appTitle', 1500).assert.containsText('#appTitle', title);
+    return client.waitForElementVisible('#appTitle', 1500).assert.containsText('#appTitle', title);
   })
 
   Then('the Movies List exists', function () {
