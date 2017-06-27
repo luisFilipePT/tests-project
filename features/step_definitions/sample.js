@@ -32,4 +32,23 @@ defineSupportCode(({ Given, Then, When }) => {
      client.assert.equal(result.value.length, elementCountExpected);
    });
   });
+
+  // USER
+  Given('I open the app', function () {
+    return client.waitForElementVisible('#appTitle', 1500).assert.containsText('#appTitle', title);
+  });
+
+  Then('the user has a photo', function (title) {
+    return client.assert.visible('.user-img');
+  });
+
+  Then('the user has a name', function (title) {
+    return client.assert.containsText('.user-name', "Luis Oliveira");
+  });
+
+  Then('the user has social links', function (title) {
+    return client.elements('css selector','.social-links', function (result) {
+     client.assert.equal(result.value.length, elementCountExpected);
+   });
+  });
 })
