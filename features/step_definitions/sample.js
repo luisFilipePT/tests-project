@@ -83,7 +83,7 @@ defineSupportCode(({ Given, Then, When }) => {
   });
 
   Then('I click the facebook link', function () {
-    return client..useXpath()
+    return client.useXpath()
     .click("//a[text()='Facebook']")
     .pause(2000)
     .useCss();
