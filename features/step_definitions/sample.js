@@ -6,7 +6,7 @@ defineSupportCode(({ Given, Then, When }) => {
   // MOVIE EXIST
   Given('I open the movies list', function () {
     return client
-      .url('http://localhost:3060')
+      .url('http://46.101.86.166')
       .waitForElementVisible('body', 1000);
   });
 
