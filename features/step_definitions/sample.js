@@ -2,45 +2,16 @@ const { client } = require('nightwatch-cucumber')
 const { defineSupportCode } = require('cucumber')
 
 defineSupportCode(({ Given, Then, When }) => {
-  // SAMPLE TEST
-  Given(/^I open Google`s search page$/, () => {
-    return client
-      .url('http://google.com')
-      .waitForElementVisible('body', 1000)
-  })
 
-  Then(/^the title is "(.*?)"$/, (text) => {
-    return client.assert.title(text)
-  })
-
-  Then(/^the Google search form exists$/, () => {
-    return client.assert.visible('input[name="q"]')
-  })
-
-  // LANDING PAGE TEST
-  Given(/^I open app Home page$/, () => {
+  // USER EXISTS
+  Given('I open the users list', function () {
     return client
       .url('http://46.101.86.166/')
-      .waitForElementVisible('body', 1100)
-  })
-
-  Then(/^the title of the page is "(.*?)"$/, (text) => {
-    return client.assert.title(text)
-  })
-
-  Then(/^the button save exists$/, () => {
-    return client.assert.visible('button[name="save"]')
-  })
-
-  // USERS LIST TEST
-  Given('I open Home', function () {
-    return client
-      .url('http://46.101.86.166/')
-      .waitForElementVisible('body', 1100);
+      .waitForElementVisible('body', 1000);
   });
 
-  Then(/^the title is like "(.*?)"$/, (text) => {
-    return client.assert.title(text);
+  Then('the title is {title}', (title) => {
+    return client.assert.title(title);
   })
 
   Then('the Users Lists exists', function () {
@@ -48,6 +19,36 @@ defineSupportCode(({ Given, Then, When }) => {
   });
 
   Then('the User {user} exists', function (user) {
-    return client.expect.element('td').text.to.contain(user);
+    var selector = ".js-" + user;
+    return client.expect.element(selector).to.be.present;
   });
+
+  // USER IS DELETED
+  Given('I am on the list of users', function () {
+    return client.assert.visible('table[class="table"]');
+  });
+
+  Given('there are {elementCountExpected} elements on the list', function (elementCountExpected) {
+    return client.elements('css selector','.js-user-id', function (result) {
+     client.assert.equal(result.value.length, elementCountExpected);
+   });
+  });
+
+  Given('I want to delete the user {userToDelete} When I pick luis to delete', function (userToDelete) {
+    var selector = "#js-delete-user-" + userToDelete;
+    return client.waitForElementVisible('#js-delete-user-luis', 3000).click(selector);
+  });
+
+  Then('The user {userDeleted} is not on the list anymore', function (userDeleted) {
+    var selector = ".js-" + userDeleted;
+    return client.expect.element(selector).to.not.be.present;
+  });
+
+  Then('there must be only {elementCountExpected} element in the list', function (elementCountExpected) {
+    return client.elements('css selector','.js-user-id', function (result) {
+      client.assert.equal(result.value.length, elementCountExpected);
+    });
+  });
+
+
 })
