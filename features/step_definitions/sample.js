@@ -75,4 +75,25 @@ defineSupportCode(({ Given, Then, When }) => {
      client.assert.equal(result.value.length, 2);
    });
   });
+
+  // FACEBOOK
+  Given('I want to check the user social profile', function () {
+    return client.waitForElementVisible('.social-links', 1500)
+    .assert.containsText('.social-links', "Facebook");
+  });
+
+  Then('I click the facebook link', function () {
+    return client..useXpath()
+    .click("//a[text()='Facebook']")
+    .pause(2000)
+    .useCss();
+  });
+
+  Then('The facebook profile is open on facebook', function () {
+    return client.url(function(result) {
+      this.assert.equal(result.value, 'https://www.facebook.com/luisfilipe.oliveira.18');
+      });
+  });
+
+
 })
