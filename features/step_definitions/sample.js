@@ -33,6 +33,26 @@ defineSupportCode(({ Given, Then, When }) => {
    });
   });
 
+  // MOVIE DETAILS
+  Given('I am on the list of movies and I want to see the details of a movie', function () {
+    return client.waitForElementVisible('#appTitle', 1500).assert.containsText('#appTitle', "My Movies App");
+  });
+
+  Then('I click the details button', function () {
+    return client.waitForElementVisible('.js-The-House', 1000).click('.js-The-House').pause(2000);
+  });
+
+  Then('I See the movie details view', function () {
+    return client.assert.containsText('.detail-title', "The House");
+  });
+
+  Then('See the selected movie info', function () {
+    return client
+    .waitForElementVisible('#year', 1500)
+    .assert.containsText('#year', "2017");
+  });
+
+
   // USER
   Given('I open the app', function () {
     return client.waitForElementVisible('#appTitle', 1500).assert.containsText('#appTitle', "My Movies App");
