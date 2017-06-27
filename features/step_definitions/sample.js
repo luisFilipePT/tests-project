@@ -49,7 +49,11 @@ defineSupportCode(({ Given, Then, When }) => {
   Then('See the selected movie info', function () {
     return client
     .waitForElementVisible('#year', 1500)
-    .assert.containsText('#year', "2017");
+    .assert.containsText('#year', "2017")
+    .waitForElementVisible('#director', 1000)
+    .assert.containsText('#director', "Andrew Jay Cohen")
+    .waitForElementVisible('#cast', 1000)
+    .assert.containsText('#cast', "Will Ferrell, Amy Poehler, Ryan Simpkins");
   });
 
 
