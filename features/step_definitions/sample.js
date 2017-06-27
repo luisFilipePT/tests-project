@@ -91,7 +91,7 @@ defineSupportCode(({ Given, Then, When }) => {
 
   Then('The facebook profile is open on facebook', function () {
     return client.url(function(result) {
-      this.assert.equal(result.value, 'https://www.facebook.com/luisfilipe.oliveira.18');
+      this.assert.equal(result.value, 'https://m.facebook.com/luisfilipe.oliveira.18');
       });
   });
 
