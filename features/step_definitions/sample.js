@@ -43,7 +43,7 @@ defineSupportCode(({ Given, Then, When }) => {
   });
 
   Then('I See the movie details view', function () {
-    return client.assert.containsText('.detail-title', "The House");
+    return client.assert.containsText('#detail-title', "The House");
   });
 
   Then('See the selected movie info', function () {
